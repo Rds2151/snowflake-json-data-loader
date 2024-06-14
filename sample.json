@@ -1,0 +1,996 @@
+[
+    {
+        "businessEntityId": "BEID001",
+        "isLineageApplied": true,
+        "staleId": "SID001",
+        "heritageIds": ["HID001"],
+        "lineageId": "LID001",
+        "dealerGroupId": "DGID001",
+        "dealershipId": "DID001",
+        "createdBy": "creator1",
+        "createdFor": "client1",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater1",
+        "updatedFor": "client1",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business One",
+            "doingBusinessAs": "B1",
+            "domain": "example.com",
+            "industry": "Automotive",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "First business entity"
+        },
+        "contacts": [
+            {
+                "key": "C1",
+                "street1": "123 Main St",
+                "street2": "Suite 1",
+                "city": "New York",
+                "stateOrProvince": "New York",
+                "stateOrProvinceAbbreviation": "NY",
+                "postalCode": "10001",
+                "countyOrRegion": "New York",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P1",
+                        "value": "123-456-7890",
+                        "extension": "100"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E1",
+                        "value": "contact1@example.com"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID001"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin1",
+                    "value": "AltValue1"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution1",
+        "updatedBySolution": "Solution1",
+        "createdBySolutionAbbreviation": "S1",
+        "updatedBySolutionAbbreviation": "S1"
+    },
+    {
+        "businessEntityId": "BEID002",
+        "isLineageApplied": true,
+        "staleId": "SID002",
+        "heritageIds": ["HID002"],
+        "lineageId": "LID002",
+        "dealerGroupId": "DGID002",
+        "dealershipId": "DID002",
+        "createdBy": "creator2",
+        "createdFor": "client2",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater2",
+        "updatedFor": "client2",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Two",
+            "doingBusinessAs": "B2",
+            "domain": "example.org",
+            "industry": "Finance",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Second business entity"
+        },
+        "contacts": [
+            {
+                "key": "C2",
+                "street1": "456 Oak St",
+                "street2": "Suite 2",
+                "city": "San Francisco",
+                "stateOrProvince": "California",
+                "stateOrProvinceAbbreviation": "CA",
+                "postalCode": "94102",
+                "countyOrRegion": "San Francisco",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P2",
+                        "value": "987-654-3210",
+                        "extension": "200"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E2",
+                        "value": "contact2@example.org"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID002"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin2",
+                    "value": "AltValue2"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution2",
+        "updatedBySolution": "Solution2",
+        "createdBySolutionAbbreviation": "S2",
+        "updatedBySolutionAbbreviation": "S2"
+    },
+    {
+        "businessEntityId": "BEID003",
+        "isLineageApplied": true,
+        "staleId": "SID003",
+        "heritageIds": ["HID003"],
+        "lineageId": "LID003",
+        "dealerGroupId": "DGID003",
+        "dealershipId": "DID003",
+        "createdBy": "creator3",
+        "createdFor": "client3",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater3",
+        "updatedFor": "client3",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Three",
+            "doingBusinessAs": "B3",
+            "domain": "example.net",
+            "industry": "Healthcare",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Third business entity"
+        },
+        "contacts": [
+            {
+                "key": "C3",
+                "street1": "789 Pine St",
+                "street2": "Suite 3",
+                "city": "Chicago",
+                "stateOrProvince": "Illinois",
+                "stateOrProvinceAbbreviation": "IL",
+                "postalCode": "60603",
+                "countyOrRegion": "Cook",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P3",
+                        "value": "555-555-5555",
+                        "extension": "300"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E3",
+                        "value": "contact3@example.net"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID003"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin3",
+                    "value": "AltValue3"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution3",
+        "updatedBySolution": "Solution3",
+        "createdBySolutionAbbreviation": "S3",
+        "updatedBySolutionAbbreviation": "S3"
+    },
+    {
+        "businessEntityId": "BEID004",
+        "isLineageApplied": true,
+        "staleId": "SID004",
+        "heritageIds": ["HID004"],
+        "lineageId": "LID004",
+        "dealerGroupId": "DGID004",
+        "dealershipId": "DID004",
+        "createdBy": "creator4",
+        "createdFor": "client4",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater4",
+        "updatedFor": "client4",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Four",
+            "doingBusinessAs": "B4",
+            "domain": "example.biz",
+            "industry": "Technology",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Fourth business entity"
+        },
+        "contacts": [
+            {
+                "key": "C4",
+                "street1": "321 Maple St",
+                "street2": "Suite 4",
+                "city": "Los Angeles",
+                "stateOrProvince": "California",
+                "stateOrProvinceAbbreviation": "CA",
+                "postalCode": "90001",
+                "countyOrRegion": "Los Angeles",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P4",
+                        "value": "444-444-4444",
+                        "extension": "400"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E4",
+                        "value": "contact4@example.biz"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID004"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin4",
+                    "value": "AltValue4"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution4",
+        "updatedBySolution": "Solution4",
+        "createdBySolutionAbbreviation": "S4",
+        "updatedBySolutionAbbreviation": "S4"
+    },
+    {
+        "businessEntityId": "BEID005",
+        "isLineageApplied": true,
+        "staleId": "SID005",
+        "heritageIds": ["HID005"],
+        "lineageId": "LID005",
+        "dealerGroupId": "DGID005",
+        "dealershipId": "DID005",
+        "createdBy": "creator5",
+        "createdFor": "client5",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater5",
+        "updatedFor": "client5",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Five",
+            "doingBusinessAs": "B5",
+            "domain": "example.co",
+            "industry": "Retail",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Fifth business entity"
+        },
+        "contacts": [
+            {
+                "key": "C5",
+                "street1": "654 Cedar St",
+                "street2": "Suite 5",
+                "city": "Houston",
+                "stateOrProvince": "Texas",
+                "stateOrProvinceAbbreviation": "TX",
+                "postalCode": "77002",
+                "countyOrRegion": "Harris",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P5",
+                        "value": "333-333-3333",
+                        "extension": "500"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E5",
+                        "value": "contact5@example.co"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID005"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin5",
+                    "value": "AltValue5"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution5",
+        "updatedBySolution": "Solution5",
+        "createdBySolutionAbbreviation": "S5",
+        "updatedBySolutionAbbreviation": "S5"
+    },
+    {
+        "businessEntityId": "BEID006",
+        "isLineageApplied": true,
+        "staleId": "SID006",
+        "heritageIds": ["HID006"],
+        "lineageId": "LID006",
+        "dealerGroupId": "DGID006",
+        "dealershipId": "DID006",
+        "createdBy": "creator6",
+        "createdFor": "client6",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater6",
+        "updatedFor": "client6",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Six",
+            "doingBusinessAs": "B6",
+            "domain": "example.edu",
+            "industry": "Education",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Sixth business entity"
+        },
+        "contacts": [
+            {
+                "key": "C6",
+                "street1": "987 Spruce St",
+                "street2": "Suite 6",
+                "city": "Phoenix",
+                "stateOrProvince": "Arizona",
+                "stateOrProvinceAbbreviation": "AZ",
+                "postalCode": "85001",
+                "countyOrRegion": "Maricopa",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P6",
+                        "value": "222-222-2222",
+                        "extension": "600"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E6",
+                        "value": "contact6@example.edu"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID006"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin6",
+                    "value": "AltValue6"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution6",
+        "updatedBySolution": "Solution6",
+        "createdBySolutionAbbreviation": "S6",
+        "updatedBySolutionAbbreviation": "S6"
+    },
+    {
+        "businessEntityId": "BEID007",
+        "isLineageApplied": true,
+        "staleId": "SID007",
+        "heritageIds": ["HID007"],
+        "lineageId": "LID007",
+        "dealerGroupId": "DGID007",
+        "dealershipId": "DID007",
+        "createdBy": "creator7",
+        "createdFor": "client7",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater7",
+        "updatedFor": "client7",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Seven",
+            "doingBusinessAs": "B7",
+            "domain": "example.gov",
+            "industry": "Government",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Seventh business entity"
+        },
+        "contacts": [
+            {
+                "key": "C7",
+                "street1": "111 Birch St",
+                "street2": "Suite 7",
+                "city": "Philadelphia",
+                "stateOrProvince": "Pennsylvania",
+                "stateOrProvinceAbbreviation": "PA",
+                "postalCode": "19103",
+                "countyOrRegion": "Philadelphia",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P7",
+                        "value": "111-111-1111",
+                        "extension": "700"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E7",
+                        "value": "contact7@example.gov"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID007"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin7",
+                    "value": "AltValue7"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution7",
+        "updatedBySolution": "Solution7",
+        "createdBySolutionAbbreviation": "S7",
+        "updatedBySolutionAbbreviation": "S7"
+    },
+    {
+        "businessEntityId": "BEID008",
+        "isLineageApplied": true,
+        "staleId": "SID008",
+        "heritageIds": ["HID008"],
+        "lineageId": "LID008",
+        "dealerGroupId": "DGID008",
+        "dealershipId": "DID008",
+        "createdBy": "creator8",
+        "createdFor": "client8",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater8",
+        "updatedFor": "client8",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Eight",
+            "doingBusinessAs": "B8",
+            "domain": "example.mil",
+            "industry": "Defense",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Eighth business entity"
+        },
+        "contacts": [
+            {
+                "key": "C8",
+                "street1": "222 Elm St",
+                "street2": "Suite 8",
+                "city": "San Diego",
+                "stateOrProvince": "California",
+                "stateOrProvinceAbbreviation": "CA",
+                "postalCode": "92101",
+                "countyOrRegion": "San Diego",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P8",
+                        "value": "888-888-8888",
+                        "extension": "800"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E8",
+                        "value": "contact8@example.mil"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID008"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin8",
+                    "value": "AltValue8"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution8",
+        "updatedBySolution": "Solution8",
+        "createdBySolutionAbbreviation": "S8",
+        "updatedBySolutionAbbreviation": "S8"
+    },
+    {
+        "businessEntityId": "BEID009",
+        "isLineageApplied": true,
+        "staleId": "SID009",
+        "heritageIds": ["HID009"],
+        "lineageId": "LID009",
+        "dealerGroupId": "DGID009",
+        "dealershipId": "DID009",
+        "createdBy": "creator9",
+        "createdFor": "client9",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater9",
+        "updatedFor": "client9",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Nine",
+            "doingBusinessAs": "B9",
+            "domain": "example.info",
+            "industry": "Media",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Ninth business entity"
+        },
+        "contacts": [
+            {
+                "key": "C9",
+                "street1": "333 Ash St",
+                "street2": "Suite 9",
+                "city": "Seattle",
+                "stateOrProvince": "Washington",
+                "stateOrProvinceAbbreviation": "WA",
+                "postalCode": "98101",
+                "countyOrRegion": "King",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P9",
+                        "value": "777-777-7777",
+                        "extension": "900"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E9",
+                        "value": "contact9@example.info"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID009"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin9",
+                    "value": "AltValue9"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution9",
+        "updatedBySolution": "Solution9",
+        "createdBySolutionAbbreviation": "S9",
+        "updatedBySolutionAbbreviation": "S9"
+    },
+    {
+        "businessEntityId": "BEID010",
+        "isLineageApplied": true,
+        "staleId": "SID010",
+        "heritageIds": ["HID010"],
+        "lineageId": "LID010",
+        "dealerGroupId": "DGID010",
+        "dealershipId": "DID010",
+        "createdBy": "creator10",
+        "createdFor": "client10",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater10",
+        "updatedFor": "client10",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Ten",
+            "doingBusinessAs": "B10",
+            "domain": "example.tv",
+            "industry": "Entertainment",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Tenth business entity"
+        },
+        "contacts": [
+            {
+                "key": "C10",
+                "street1": "444 Poplar St",
+                "street2": "Suite 10",
+                "city": "Miami",
+                "stateOrProvince": "Florida",
+                "stateOrProvinceAbbreviation": "FL",
+                "postalCode": "33101",
+                "countyOrRegion": "Miami-Dade",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P10",
+                        "value": "666-666-6666",
+                        "extension": "1000"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E10",
+                        "value": "contact10@example.tv"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID010"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin10",
+                    "value": "AltValue10"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution10",
+        "updatedBySolution": "Solution10",
+        "createdBySolutionAbbreviation": "S10",
+        "updatedBySolutionAbbreviation": "S10"
+    },
+    {
+        "businessEntityId": "BEID011",
+        "isLineageApplied": true,
+        "staleId": "SID011",
+        "heritageIds": ["HID011"],
+        "lineageId": "LID011",
+        "dealerGroupId": "DGID011",
+        "dealershipId": "DID011",
+        "createdBy": "creator11",
+        "createdFor": "client11",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater11",
+        "updatedFor": "client11",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Eleven",
+            "doingBusinessAs": "B11",
+            "domain": "example.org",
+            "industry": "Hospitality",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Eleventh business entity"
+        },
+        "contacts": [
+            {
+                "key": "C11",
+                "street1": "555 Chestnut St",
+                "street2": "Suite 11",
+                "city": "Atlanta",
+                "stateOrProvince": "Georgia",
+                "stateOrProvinceAbbreviation": "GA",
+                "postalCode": "30301",
+                "countyOrRegion": "Fulton",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P11",
+                        "value": "555-555-5555",
+                        "extension": "1100"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E11",
+                        "value": "contact11@example.org"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID011"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin11",
+                    "value": "AltValue11"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution11",
+        "updatedBySolution": "Solution11",
+        "createdBySolutionAbbreviation": "S11",
+        "updatedBySolutionAbbreviation": "S11"
+    },
+    {
+        "businessEntityId": "BEID012",
+        "isLineageApplied": true,
+        "staleId": "SID012",
+        "heritageIds": ["HID012"],
+        "lineageId": "LID012",
+        "dealerGroupId": "DGID012",
+        "dealershipId": "DID012",
+        "createdBy": "creator12",
+        "createdFor": "client12",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater12",
+        "updatedFor": "client12",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Twelve",
+            "doingBusinessAs": "B12",
+            "domain": "example.jobs",
+            "industry": "Recruitment",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Twelfth business entity"
+        },
+        "contacts": [
+            {
+                "key": "C12",
+                "street1": "666 Walnut St",
+                "street2": "Suite 12",
+                "city": "Denver",
+                "stateOrProvince": "Colorado",
+                "stateOrProvinceAbbreviation": "CO",
+                "postalCode": "80201",
+                "countyOrRegion": "Denver",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P12",
+                        "value": "999-999-9999",
+                        "extension": "1200"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E12",
+                        "value": "contact12@example.jobs"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID012"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin12",
+                    "value": "AltValue12"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution12",
+        "updatedBySolution": "Solution12",
+        "createdBySolutionAbbreviation": "S12",
+        "updatedBySolutionAbbreviation": "S12"
+    },
+    {
+        "businessEntityId": "BEID013",
+        "isLineageApplied": true,
+        "staleId": "SID013",
+        "heritageIds": ["HID013"],
+        "lineageId": "LID013",
+        "dealerGroupId": "DGID013",
+        "dealershipId": "DID013",
+        "createdBy": "creator13",
+        "createdFor": "client13",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater13",
+        "updatedFor": "client13",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Thirteen",
+            "doingBusinessAs": "B13",
+            "domain": "example.aero",
+            "industry": "Aviation",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Thirteenth business entity"
+        },
+        "contacts": [
+            {
+                "key": "C13",
+                "street1": "777 Pine St",
+                "street2": "Suite 13",
+                "city": "Charlotte",
+                "stateOrProvince": "North Carolina",
+                "stateOrProvinceAbbreviation": "NC",
+                "postalCode": "28202",
+                "countyOrRegion": "Mecklenburg",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P13",
+                        "value": "222-333-4444",
+                        "extension": "1300"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E13",
+                        "value": "contact13@example.aero"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID013"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin13",
+                    "value": "AltValue13"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution13",
+        "updatedBySolution": "Solution13",
+        "createdBySolutionAbbreviation": "S13",
+        "updatedBySolutionAbbreviation": "S13"
+    },
+    {
+        "businessEntityId": "BEID014",
+        "isLineageApplied": true,
+        "staleId": "SID014",
+        "heritageIds": ["HID014"],
+        "lineageId": "LID014",
+        "dealerGroupId": "DGID014",
+        "dealershipId": "DID014",
+        "createdBy": "creator14",
+        "createdFor": "client14",
+        "createdOn": "2024-04-17T20:44:25.242Z",
+        "updatedBy": "updater14",
+        "updatedFor": "client14",
+        "updatedOn": "2024-04-17T20:44:25.242Z",
+        "platformUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "solutionUpdatedDate": "2024-04-17T20:44:25.242Z",
+        "businessInfo": {
+            "type": "Fleet",
+            "name": "Business Fourteen",
+            "doingBusinessAs": "B14",
+            "domain": "example.name",
+            "industry": "Consulting",
+            "status": "InBusiness",
+            "businessStartDate": "2024-04-17",
+            "taxExemptStatus": "TaxExempt",
+            "note": "Fourteenth business entity"
+        },
+        "contacts": [
+            {
+                "key": "C14",
+                "street1": "888 Elmwood St",
+                "street2": "Suite 14",
+                "city": "Boston",
+                "stateOrProvince": "Massachusetts",
+                "stateOrProvinceAbbreviation": "MA",
+                "postalCode": "02101",
+                "countyOrRegion": "Suffolk",
+                "country": "United States",
+                "countryAbbreviation": "US",
+                "phones": [
+                    {
+                        "key": "P14",
+                        "value": "111-222-3333",
+                        "extension": "1400"
+                    }
+                ],
+                "emails": [
+                    {
+                        "key": "E14",
+                        "value": "contact14@example.name"
+                    }
+                ]
+            }
+        ],
+        "associations": {
+            "associatedIndividuals": ["AID014"],
+            "alternateIds": [
+                {
+                    "origin": "AltOrigin14",
+                    "value": "AltValue14"
+                }
+            ]
+        },
+        "isActive": true,
+        "autoMergeDisabled": false,
+        "isMatchable": true,
+        "createdBySolution": "Solution14",
+        "updatedBySolution": "Solution14",
+        "createdBySolutionAbbreviation": "S14",
+        "updatedBySolutionAbbreviation": "S14"
+    }
+]
