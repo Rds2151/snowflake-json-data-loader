@@ -8,7 +8,7 @@ import re
 load_dotenv()
 
 # Snowflake credentials JSON string and file 
-load_file_path = os.getenv('LOAD_FILE')
+load_file = os.getenv('LOAD_FILE')
 snowflake_cred_file = os.getenv('SNOWFLAKE_CRED_FILE')
 with open(snowflake_cred_file, 'r') as file:
     snowflake_data = json.load(file)
@@ -24,11 +24,8 @@ s3_storage_arn = os.getenv('S3_STORAGE_AWS_ROLE_ARN')
 s3_storage_allowed = os.getenv('S3_STORAGE_ALLOWED_LOCATIONS')
 
 # Validate environment variables
-if not all([load_file_path, snowflake_cred_file, snowflake_stage_name, snowflake_json_raw_table_name, snowflake_file_format_name, snowflake_storage_int, s3_storage_arn, s3_storage_allowed]):
+if not all([load_file, snowflake_cred_file, snowflake_stage_name, snowflake_json_raw_table_name, snowflake_file_format_name, snowflake_storage_int, s3_storage_arn, s3_storage_allowed]):
     raise ValueError("Some environment variables are missing.")
-
-with open(load_file_path, 'r') as file:
-    data = json.load(file)
 
 print("Connecting to the snowflake...")
 # Establish Snowflake connection
@@ -67,7 +64,7 @@ try:
     
     # Copy json data from S3 to Raw table
     print("Copying json data from S3 bucket to raw table...")
-    sf_cursor_obj.execute(f"Copy into {snowflake_json_raw_table_name} from @{snowflake_stage_name}/sample.json FILE_FORMAT='{snowflake_file_format_name}';")
+    sf_cursor_obj.execute(f"Copy into {snowflake_json_raw_table_name} from @{snowflake_stage_name}/{load_file} FILE_FORMAT='{snowflake_file_format_name}';")
     result = sf_cursor_obj.fetchone()
     print(result)
 except Exception as e:
