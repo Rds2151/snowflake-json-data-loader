@@ -1,17 +1,34 @@
 import snowflake.connector as sf
 import json
+import boto3
 import os
 import sys
 
 from awsglue.utils import getResolvedOptions
 
+# Function to retrieve secrets from AWS Secrets Manager
+def get_secret(secret_name):
+    region_name = "ap-south-1"  # Change this to your region
+
+    # Create a Secrets Manager client
+    client = boto3.client('secretsmanager', region_name=region_name)
+
+    try:
+        get_secret_value_response = client.get_secret_value(SecretId=secret_name)
+    except Exception as e:
+        raise Exception(f"Error retrieving secret: {str(e)}")
+
+    secret = get_secret_value_response['SecretString']
+    return json.loads(secret)
+
+# Load Snowflake credentials from Secrets Manager
+secret_name = "snowflake_credentials"
+snowflake_data = get_secret(secret_name)
+
 # Get the Glue parameters
 args = getResolvedOptions(sys.argv, [
     'LOAD_FILE',
     'SNOWFLAKE_STAGE_NAME',
-    "SNOWFLAKE_USERNAME",
-    "SNOWFLAKE_PASSWORD",
-    "SNOWFLAKE_ACCOUNT",
     "SNOWFLAKE_WAREHOUSE",
     "SNOWFLAKE_DATABASE",
     "SNOWFLAKE_SCHEMA",
@@ -36,9 +53,9 @@ s3_storage_allowed = args['S3_STORAGE_ALLOWED_LOCATIONS']
 print("Connecting to Snowflake...")
 # Establish Snowflake connection
 sf_conn_obj = sf.connect(
-    user=args['SNOWFLAKE_USERNAME'],
-    password=args['SNOWFLAKE_PASSWORD'],
-    account=args['SNOWFLAKE_ACCOUNT'],
+    user=snowflake_data['SNOWFLAKE_USERNAME'],
+    password=snowflake_data['SNOWFLAKE_PASSWORD'],
+    account=snowflake_data['SNOWFLAKE_ACCOUNT'],
     warehouse=args['SNOWFLAKE_WAREHOUSE'],
     database=args['SNOWFLAKE_DATABASE'],
     schema=args['SNOWFLAKE_SCHEMA']
